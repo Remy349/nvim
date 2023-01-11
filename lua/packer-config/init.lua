@@ -16,6 +16,12 @@ return require("packer").startup(function(use)
     },
   }
 
+  use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+
   -- Colors Theme
   use "EdenEast/nightfox.nvim"
 end)
