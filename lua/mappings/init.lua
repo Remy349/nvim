@@ -6,6 +6,9 @@ vim.keymap.set("i", "ii", "<esc>", {noremap = true})
 vim.keymap.set("n", "<leader>w", ":w<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>q", ":bdelete<cr>", {noremap = true})
 
+vim.keymap.set("v", "<", "<gv", {noremap = true})
+vim.keymap.set("v", ">", ">gv", {noremap = true})
+
 vim.keymap.set("n", "fs", ":source %<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>c", "<S-$>zf%", {noremap = true, silent = false})
 
@@ -23,10 +26,14 @@ vim.keymap.set("n", "<leader>x", ":sp<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>k", ":bnext<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>j", ":bprevious<cr>", {noremap = true})
 
-vim.keymap.set("n", "<right>", ":vertical resize +5<cr>", {noremap = true})
-vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true})
-vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true})
-vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true})
+vim.keymap.set("n", "<right>", ":vertical resize +5<cr>", {noremap = true, silent = true})
+vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true, silent = true})
+vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true, silent = true})
+vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true, silent = true})
+
+-- Dadbod
+vim.keymap.set("n", "<leader><leader>db", ":tab DBUI<cr>", {noremap = true})
+vim.keymap.set("n", "<leader><leader>tq", ":tabclose<cr>", {noremap = true})
 
 -- TagBar
 cmd([[ nmap <F9> :TagbarToggle<CR> ]])

@@ -244,6 +244,16 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-css-color",
     url = "https://github.com/ap/vim-css-color"
   },
+  ["vim-dadbod"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-dadbod",
+    url = "https://github.com/tpope/vim-dadbod"
+  },
+  ["vim-dadbod-ui"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui",
+    url = "https://github.com/kristijanhusak/vim-dadbod-ui"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-fugitive",

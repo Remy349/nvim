@@ -8,6 +8,10 @@ return require("packer").startup(function(use)
   use 'tpope/vim-rhubarb'
   use 'junegunn/gv.vim'
 
+  -- Database
+  use 'tpope/vim-dadbod'
+  use 'kristijanhusak/vim-dadbod-ui'
+
   -- Coding
   use 'ap/vim-css-color'
   use 'mattn/emmet-vim'
