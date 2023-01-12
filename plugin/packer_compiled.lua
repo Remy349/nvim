@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/colorizer",
     url = "https://github.com/lilydjwg/colorizer"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/emmet-vim",

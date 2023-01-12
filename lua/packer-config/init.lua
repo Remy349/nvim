@@ -19,6 +19,7 @@ return require("packer").startup(function(use)
   use 'pangloss/vim-javascript'
 
   -- Functionality
+  use {'glepnir/dashboard-nvim'}
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     -- or                            , branch = '0.1.x',
