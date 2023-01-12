@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
   },
+  ["gv.vim"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/gv.vim",
+    url = "https://github.com/junegunn/gv.vim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -124,10 +129,30 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["vim-css-color"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-css-color",
     url = "https://github.com/ap/vim-css-color"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-rhubarb"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
+    url = "https://github.com/tpope/vim-rhubarb"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,
