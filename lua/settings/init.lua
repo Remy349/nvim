@@ -13,6 +13,7 @@ cmd("filetype off")
 cmd("filetype plugin on")
 cmd("colorscheme nightfox")
 
+set.filetype = 'none'
 set.updatetime = 50
 set.number = true
 set.relativenumber = true
