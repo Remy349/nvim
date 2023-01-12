@@ -27,6 +27,12 @@ db.custom_center = {
     desc = 'Find file                    ',
     action = 'Telescope find_files',
     shortcut = '<leader> + ff'
+  },
+  {
+    icon = '  ',
+    desc = 'Find word                    ',
+    action = 'Telescope live_grep',
+    shortcut = '<leader> + fg'
   }
 }
 db.custom_footer = {'Santiago enjoys your time programming'}
