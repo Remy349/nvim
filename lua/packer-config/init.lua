@@ -11,6 +11,12 @@ return require("packer").startup(function(use)
   -- Coding
   use 'ap/vim-css-color'
   use 'mattn/emmet-vim'
+  use 'preservim/nerdcommenter'
+  use 'jiangmiao/auto-pairs'
+  use 'alvan/vim-closetag'
+  use 'majutsushi/tagbar'
+  use 'andrewradev/tagalong.vim'
+  use 'pangloss/vim-javascript'
 
   -- Functionality
   use {

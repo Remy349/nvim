@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -104,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  nerdcommenter = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/nerdcommenter",
+    url = "https://github.com/preservim/nerdcommenter"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
@@ -129,10 +139,25 @@ _G.packer_plugins = {
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["tagalong.vim"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/tagalong.vim",
+    url = "https://github.com/andrewradev/tagalong.vim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/majutsushi/tagbar"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-closetag"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-closetag",
+    url = "https://github.com/alvan/vim-closetag"
   },
   ["vim-css-color"] = {
     loaded = true,
@@ -148,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-javascript"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/vim-javascript",
+    url = "https://github.com/pangloss/vim-javascript"
   },
   ["vim-rhubarb"] = {
     loaded = true,

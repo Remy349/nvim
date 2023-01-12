@@ -1,4 +1,5 @@
 local builtin = require('telescope.builtin')
+local cmd = vim.cmd
 
 -- Native Config
 vim.keymap.set("i", "ii", "<esc>", {noremap = true})
@@ -27,9 +28,16 @@ vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true})
 vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true})
 vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true})
 
+-- TagBar
+cmd([[ nmap <F9> :TagbarToggle<CR> ]])
+
 -- Nvim tree
 vim.keymap.set("n", "<leader>n", ":NvimTreeToggle<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>m", ":NvimTreeFindFile<cr>", {noremap = true})
+
+-- NerdCommenter
+vim.keymap.set("n", "++", "<plug>NERDCommenterToggle", {noremap = true})
+vim.keymap.set("v", "++", "<plug>NERDCommenterToggle", {noremap = true})
 
 -- Telescope
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {noremap = true})
