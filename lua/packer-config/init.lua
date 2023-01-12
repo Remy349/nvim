@@ -40,6 +40,7 @@ return require("packer").startup(function(use)
       {'rafamadriz/friendly-snippets'},
     }
   }
+  use 'onsails/lspkind.nvim'
 
   -- Functionality
   use {'glepnir/dashboard-nvim'}
