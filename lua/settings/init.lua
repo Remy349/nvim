@@ -13,6 +13,8 @@ cmd("filetype off")
 cmd("filetype plugin on")
 cmd("colorscheme nightfox")
 
+cmd("let g:python3_host_prog = '/usr/local/bin/python3.10'")
+
 set.filetype = 'none'
 set.updatetime = 50
 set.number = true

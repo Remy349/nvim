@@ -31,6 +31,10 @@ vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true, silent
 vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true, silent = true})
 vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true, silent = true})
 
+-- Null ls formatting
+vim.keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.format({ async = true })<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>ld", ":lua vim.diagnostic.setloclist()<cr>", {noremap = true})
+
 -- Dadbod
 vim.keymap.set("n", "<leader><leader>db", ":tab DBUI<cr>", {noremap = true})
 vim.keymap.set("n", "<leader><leader>tq", ":tabclose<cr>", {noremap = true})

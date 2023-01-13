@@ -45,6 +45,7 @@ return require("packer").startup(function(use)
     }
   }
   use 'onsails/lspkind.nvim'
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Functionality
   use 'p00f/nvim-ts-rainbow'
