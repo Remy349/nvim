@@ -10,7 +10,7 @@ vim.keymap.set("v", "<", "<gv", {noremap = true})
 vim.keymap.set("v", ">", ">gv", {noremap = true})
 
 vim.keymap.set("n", "fs", ":source %<cr>", {noremap = true})
-vim.keymap.set("n", "<leader>c", "<S-$>zf%", {noremap = true, silent = false})
+vim.keymap.set("n", "<leader>b", "<S-$>zf%", {noremap = true, silent = false})
 
 vim.keymap.set("n", "<up>", "<nop>", {noremap = true})
 vim.keymap.set("n", "<down>", "<nop>", {noremap = true})
@@ -30,6 +30,8 @@ vim.keymap.set("n", "<right>", ":vertical resize +5<cr>", {noremap = true, silen
 vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true, silent = true})
 vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true, silent = true})
 vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true, silent = true})
+
+vim.keymap.set("n", "E", ":lua vim.diagnostic.open_float()<cr>", {noremap = true})
 
 -- Null ls formatting
 vim.keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.format({ async = true })<cr>", {noremap = true})
