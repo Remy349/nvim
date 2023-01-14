@@ -62,7 +62,6 @@ return require("packer").startup(function(use)
     -- or                            , branch = '0.1.x',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use 'christoomey/vim-tmux-navigator'
   use "nvim-lua/plenary.nvim"
   use 'nvim-tree/nvim-web-devicons'
   use {

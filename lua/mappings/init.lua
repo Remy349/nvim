@@ -6,6 +6,11 @@ vim.keymap.set("i", "ii", "<esc>", {noremap = true})
 vim.keymap.set("n", "<leader>w", ":w<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>q", ":bdelete<cr>", {noremap = true})
 
+vim.keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = false })
+vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
+vim.keymap.set('n', '<C-j>', '<C-w>j', { noremap = true, silent = false })
+vim.keymap.set('n', '<C-k>', '<C-w>k', { noremap = true, silent = false })
+
 vim.keymap.set("v", "<", "<gv", {noremap = true})
 vim.keymap.set("v", ">", ">gv", {noremap = true})
 
@@ -31,7 +36,10 @@ vim.keymap.set("n", "<left>", ":vertical resize -5<cr>", {noremap = true, silent
 vim.keymap.set("n", "<up>", ":resize +5<cr>", {noremap = true, silent = true})
 vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true, silent = true})
 
+-- LSP Diagnostic
 vim.keymap.set("n", "E", ":lua vim.diagnostic.open_float()<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>dc", ":lua vim.diagnostic.config({ virtual_text = true })<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>dx", ":lua vim.diagnostic.config({ virtual_text = false })<cr>", {noremap = true})
 
 -- Null ls formatting
 vim.keymap.set("n", "<leader>lf", ":lua vim.lsp.buf.format({ async = true })<cr>", {noremap = true})
