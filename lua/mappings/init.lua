@@ -5,6 +5,7 @@ local cmd = vim.cmd
 vim.keymap.set("i", "ii", "<esc>", {noremap = true})
 vim.keymap.set("n", "<leader>w", ":w<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>q", ":bdelete<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>dt", ":DashboardNewFile<cr>", {noremap = true})
 
 vim.keymap.set('n', '<C-h>', '<C-w>h', { noremap = true, silent = false })
 vim.keymap.set('n', '<C-l>', '<C-w>l', { noremap = true, silent = false })
@@ -38,7 +39,7 @@ vim.keymap.set("n", "<down>", ":resize -5<cr>", {noremap = true, silent = true})
 
 -- LSP Diagnostic
 vim.keymap.set("n", "E", ":lua vim.diagnostic.open_float()<cr>", {noremap = true})
-vim.keymap.set("n", "<leader>dc", ":lua vim.diagnostic.config({ virtual_text = true })<cr>", {noremap = true})
+vim.keymap.set("n", "<leader>dc", ":lua vim.diagnostic.config({ virtual_text = true, update_in_insert = true })<cr>", {noremap = true})
 vim.keymap.set("n", "<leader>dx", ":lua vim.diagnostic.config({ virtual_text = false })<cr>", {noremap = true})
 
 -- Null ls formatting

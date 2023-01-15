@@ -17,10 +17,10 @@ db.default_banner = {
 }
 db.custom_center = {
   {
-    icon = '  ',
-    desc = 'NvimTree                    ',
-    action = 'NvimTreeToggle',
-    shortcut = '<leader> + n'
+    icon = '  ',
+    desc = 'New file                     ',
+    action = 'DashboardNewFile',
+    shortcut = '<leader> + dt'
   },
   {
     icon = '  ',
@@ -33,6 +33,12 @@ db.custom_center = {
     desc = 'Find word                    ',
     action = 'Telescope live_grep',
     shortcut = '<leader> + fg'
+  },
+  {
+    icon = '  ',
+    desc = 'NvimTree                    ',
+    action = 'NvimTreeToggle',
+    shortcut = '<leader> + n'
   }
 }
 db.custom_footer = {'Santiago enjoys your time programming'}
