@@ -16,7 +16,7 @@ cmd("colorscheme nightfox")
 cmd("let g:python3_host_prog = '/usr/local/bin/python3.10'")
 
 set.filetype = 'none'
-set.updatetime = 50
+set.updatetime = 300
 set.number = true
 set.relativenumber = true
 set.title = true

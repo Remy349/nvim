@@ -1,3 +1,5 @@
+pcall(require, "impatient")
+
 require("settings")
 require("mappings")
 require("packer-config")
