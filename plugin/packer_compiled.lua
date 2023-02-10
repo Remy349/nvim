@@ -120,8 +120,11 @@ _G.packer_plugins = {
     url = "https://github.com/lilydjwg/colorizer"
   },
   ["dashboard-nvim"] = {
-    loaded = true,
-    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    config = { "\27LJ\2\n�\3\0\0\6\0\17\0\0256\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\5\0005\4\4\0=\4\6\0034\4\5\0005\5\a\0>\5\1\0045\5\b\0>\5\2\0045\5\t\0>\5\3\0045\5\n\0>\5\4\4=\4\v\0035\4\f\0=\4\r\0035\4\14\0=\4\15\3=\3\16\2B\0\2\1K\0\1\0\vconfig\bmru\1\0\1\nlimit\3\5\fproject\1\0\1\nlimit\3\5\rshortcut\1\0\4\tdesc\17 dotfiles\vaction\23Telescope dotfiles\ngroup\vNumber\bkey\6d\1\0\4\tdesc\r Apps\vaction\18Telescope app\ngroup\19DiagnosticHint\bkey\6a\1\0\4\tdesc\14 Files\vaction\25Telescope find_files\ngroup\nLabel\bkey\6f\1\0\4\tdesc\15 Update\vaction\16Lazy update\ngroup\14@property\bkey\6u\16week_header\1\0\0\1\0\1\venable\2\1\0\1\ntheme\nhyper\nsetup\14dashboard\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/opt/dashboard-nvim",
     url = "https://github.com/glepnir/dashboard-nvim"
   },
   ["emmet-vim"] = {
@@ -158,6 +161,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/home/santiagom/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -282,6 +290,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au VimEnter * ++once lua require("packer.load")({'dashboard-nvim'}, { event = "VimEnter *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
