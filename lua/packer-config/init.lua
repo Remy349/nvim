@@ -48,6 +48,7 @@ return require("packer").startup(function(use)
   use 'jose-elias-alvarez/null-ls.nvim'
 
   -- Functionality
+  use('akinsho/toggleterm.nvim')
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
@@ -92,7 +93,8 @@ return require("packer").startup(function(use)
             },
           },
           project = { limit = 5 },
-          mru = { limit = 5 }
+          mru = { limit = 10 },
+          footer = {},
         },
       }
     end,
